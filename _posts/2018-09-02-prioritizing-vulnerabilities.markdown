@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: posts
 title:  "Prioritizing Vulnerabilities"
 date:   2018-09-02 
-categories: 
+categories: work
 ---
 >I got 99 problems but XSS ain't one
 

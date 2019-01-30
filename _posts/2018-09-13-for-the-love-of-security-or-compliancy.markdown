@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: posts
 title:  "For the Love of Security, or Compliancy"
 date:   2018-09-13 
-categories: 
+categories: work
 ---
 Often during engagements one has to wonder...<br>
 Does the client truly <s>loves</s> values security, or is this another...

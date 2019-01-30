@@ -2,7 +2,7 @@
 layout: posts
 title:  "Gemini Inc v1 Walkthrough"
 date:   2018-03-07 
-categories: 
+categories: walkthrough
 ---
 The vulnerable machine has been published on https://www.vulnhub.com on 7/3/2018.
 

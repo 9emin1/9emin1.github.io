@@ -3,12 +3,10 @@ layout: page
 title: Posts
 permalink: /pages/
 ---
-{% for post in site.posts reversed %}
-<div class="row">
-	<div>
-		<li><a href="{{ post.url }}"><h3>{{ post.title }}</h3></a></li>
-		<b><sub>{{ post.date | date: '%B %d, %Y' }}</sub></b>
-	  	{{ post.excerpt }}
-	</div>
-</div>
-{% endfor %}
+<ul>
+  {% for post in site.categories.work %}
+    {% if post.url %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
