@@ -13,4 +13,6 @@ Good job to the others who got the credentials via brute-forcing, the per-reques
 
 https://www.youtube.com/watch?v=s7EzCdp4uZE
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s7EzCdp4uZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Stay tune for v2!
