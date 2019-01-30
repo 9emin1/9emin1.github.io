@@ -32,19 +32,21 @@ I got promoted to a Senior title this year in Vantage Point Security, and I also
 
 This year was great as well! I was given the opportunity to visit California, San Jose in US for the OWASP AppSec 2018 Conference as a trainer for the workshop Mobile Security Testing, together with my colleague Sven.
 
-<div style="text-align: center"><img src="../images/appsec-training2018.JPG" height="350" width="700"/></div>
+<div style="text-align: center"><img src="../images/appsec-training2018.JPG" height="350" width="350"/></div>
 
 The workshop was great, attendees were awesome, the conference was held at FairMont Hotel. The CTF was fun too! Managed to snipe the 5th place, winning a rubber ducky.
 
 <div style="text-align: center"><img src="../images/appsec-ctf2018.JPG" height="350" width="700"/></div>
 
-<div style="text-align: center"><img src="../images/appsec-ctf22018.JPG" height="350" width="700"/></div>
+Rubber Ducky!
+
+<div style="text-align: center"><img src="../images/appsec-ctf22018.JPG" height="700" width="350"/></div>
 
 I was getting pretty bored with mainly projects revolving around applications (mobile and web) and decided to part ways with Vantage Point Security to pursue an environment that can provide more variety.
 
 I managed to clear my CREST CCT APP exam too! On my second try.
 
-<div style="text-align: center"><img src="../images/crest-cct-2018.JPG" height="350" width="700"/></div>
+<div style="text-align: center"><img src="../images/crest-cct-2018.JPG" height="700" width="350"/></div>
 
 ### 2017
 
@@ -54,7 +56,7 @@ I was also involved in conducting workshops for my clients, covering OWASP Top 1
 
 Ending the year off, I was awarded the "Best Overall Hack of 2017" by my employer! 
 
-<div style="text-align: center"><img src="../images/vp2017.jpg" height="350" width="700"/></div>
+<div style="text-align: center"><img src="../images/vp2017.jpg" height="250" width="250"/></div>
 
 Life's great.
 
@@ -80,4 +82,4 @@ This is the place which sparked my interest for security. I was exposed to vario
 
 Examples include completing my SANS GCIH certification, getting my OSCP, CREST CPSA, and CRT certifications. I self-paid my OSCP and CREST certifications as they were not directly related to my job. (More towards penetration testing)
 
-<div style="text-align: center"><img src="../images/offsec-cert-2016.JPG" height="350" width="700"/></div>
+<div style="text-align: center"><img src="../images/offsec-cert-2016.JPG" height="700" width="350"/></div>
