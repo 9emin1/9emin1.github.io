@@ -4,4 +4,4 @@
 
 layout: page
 ---
-<div style="text-align: center"><img src="./Gate_rory_mercury.jpg" height="350" width="700"/></div>
+<div style="text-align: center"><img src="./_images/rorymercury-about-us.gif" height="350" width="700"/></div>

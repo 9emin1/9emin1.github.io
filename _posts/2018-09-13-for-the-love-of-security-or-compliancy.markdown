@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "For the Love of Security, or Compliancy"
 date:   2018-09-13 
 categories: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Prioritizing Vulnerabilities"
 date:   2018-09-02 
 categories: 
