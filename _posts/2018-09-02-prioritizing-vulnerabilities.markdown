@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "Prioritizing Vulnerabilities"
 date:   2018-09-02 
 categories: work

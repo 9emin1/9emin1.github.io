@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "OSCP Journey"
 date:   2016-04-08 
 categories: progress, work

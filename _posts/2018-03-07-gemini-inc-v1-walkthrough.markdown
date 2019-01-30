@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "Gemini Inc v1 Walkthrough"
 date:   2018-03-07 
 categories: walkthrough
