@@ -4,4 +4,3 @@
 
 layout: page
 ---
-<div style="text-align: center"><img src="./rorymercury-about-us.gif" height="350" width="700"/></div>
