@@ -2,7 +2,7 @@
 layout: post
 title:  "OSCP Journey"
 date:   2016-04-08 
-categories: progress, work
+categories: progress work
 ---
 I am an Information Security enthusiast, easily intrigued by things which I don't understand.
 I have less than a year of working experience (as of July, 2016) and zero Penetration-Testing/Vulnerability Assessment experience.
