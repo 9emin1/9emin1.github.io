@@ -1,3 +1,5 @@
-## About
-
-fill in about
+---
+layout: page
+title: About Us
+permalink: /about/
+---

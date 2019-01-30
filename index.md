@@ -4,4 +4,4 @@
 
 layout: page
 ---
-![Rory Mercury](./rorymercury-about-us.gif "Pwn")
+<div style="text-align: center"><img src="./Gate_rory_mercury.jpg" height="350" width="700"/></div>

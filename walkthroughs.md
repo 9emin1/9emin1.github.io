@@ -1,3 +1,5 @@
-## Welcome to GitHub Pages
-
-fill in walkthroughs
+---
+layout: page
+title: Walkthroughs
+permalink: /walkthroughs/
+---
