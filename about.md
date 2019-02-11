@@ -13,8 +13,9 @@ I currently hold a Bachelor Degree of Computer Science, Digital System Security 
 * CREST CRT (2016 - 2019)
 * CREST CPSA (2016 - 2019)
 
-* Offensive Security - OSCP
-* Offensive Security - OSWP
+* Offensive Security - OSCE (2019)
+* Offensive Security - OSCP (2016)
+* Offensive Security - OSWP (2016)
 
 * SANS - GCIH 504
 
