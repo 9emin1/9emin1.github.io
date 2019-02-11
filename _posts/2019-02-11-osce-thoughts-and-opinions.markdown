@@ -50,7 +50,7 @@ Pros:
 
 Cons:
 
-- It is a <b>pain in the ass</b> to have to RDP into the Windows boxes provided. I ended up setting my own instances of Windows to go through the materials
+- It is a pain in the ass to have to RDP into the Windows boxes provided. I ended up setting my own instances of Windows to go through the materials
 - Methods and techniques are dated. This is up to how you see it. Having a better grasp of the underlying concept is good. 
 ```
 
@@ -63,9 +63,9 @@ Some tips for the exam:
 - Take small steps. Be very cautious and make sure everything works as intended before advancing to the next step. This will save a lot of time.
 - The HP Openview NNM was discussed during DefCon16, by none other than the author Mati himself:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gHISpAZiAm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- A sample report is available from Offensive Security themselves. The reporting baically became a "fill in the blanks" portion.
+- A sample report is available from Offensive Security themselves. The reporting basically became a "fill in the blanks" portion.
 https://support.offensive-security.com/osce-faq/#how-do-i-schedule-my-certification-exam
 - Do your report while you attempt the exams! Saves a lot of time. I basically completed everything and the report as well in like ++~10 hours
 
 That's it! First certificate of the year!
-<div style="text-align: center"><img src="/images/offsec-osce-email.PNG" height="220" width="440"/></div>
+<div style="text-align: center"><img src="/images/offsec-osce-email.PNG" height="220" width="660"/></div>
