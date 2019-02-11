@@ -59,7 +59,7 @@ Overall I would say it is worth the effort and time. Thankfully my employer paid
 Some tips for the exam:
 
 
-- Learning how to use a debugger is more important than understanding assembly. Many times you wil need to set breakpoints at various locations to find out what is going wrong. 
+- Learning how to use a debugger is more important than understanding assembly. Many times you will need to set breakpoints at various locations to find out what is going wrong. 
 - Take small steps. Be very cautious and make sure everything works as intended before advancing to the next step. This will save a lot of time.
 - The HP Openview NNM was discussed during DefCon16, by none other than the author Mati himself:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gHISpAZiAm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
