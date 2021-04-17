@@ -17,7 +17,7 @@ title: Strolling InfoSec
 email: sec.9emin1@gmail.com
 auther: 9emin1
 description: >- # this means to ignore newlines until "baseurl:"
-  the hard spoken truth
+  the world is my lab
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sec_9emin1

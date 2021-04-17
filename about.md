@@ -5,4 +5,4 @@ permalink: /about/
 ---
 
 ### Welcome!
-This web page will be used to document my Information Security/Cyber career.
+rants and opinions, maybe some cool tips
