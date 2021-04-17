@@ -4,3 +4,6 @@
 
 layout: page
 ---
+
+### Welcome!
+rants and opinions, maybe some cool tips
