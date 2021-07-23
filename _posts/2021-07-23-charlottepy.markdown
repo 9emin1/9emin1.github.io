@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "extending charlotte.py"
+title:  "Extending charlotte.py"
 date:   2021-07-24
 categories: progress work
 ---
@@ -150,5 +150,5 @@ And thats it, we have our meterpreter shell working well again on a fully patche
 
 It has been a good overall learning experience and I have a personal v2.0 version of charlotte.py that uses another process injection technique. It has been fun working on this and knowing that the release of the script has improved the consumer version of Windows Defender is great.
 
-Good to know too that Windows Defender is now flagging payloads for 'suspicious' content in the binary. Effective? 
+Good to know too that Windows Defender is now flagging payloads for 'suspicious' content patterns in binaries. Effective? 
 
